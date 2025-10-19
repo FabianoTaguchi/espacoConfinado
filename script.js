@@ -234,6 +234,15 @@ function confirmAnswer() {
     els.feedback.textContent = chosen.feedback;
     els.feedback.classList.add("incorrect");
     els.feedback.classList.remove("correct");
+
+    // destacar a resposta correta
+    const correctIdx = options.findIndex((o) => o.correct);
+    if (correctIdx !== -1) {
+      const correctInput = document.getElementById(`opt-${correctIdx}`);
+      if (correctInput && correctInput.parentElement) {
+        correctInput.parentElement.classList.add("correct-answer");
+      }
+    }
   }
 
   // lock options after confirm
