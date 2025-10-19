@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz: Trabalho em Espaço Confinado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz: Trabalho em Espaço Confinado</h1>
+
+    <div id="quiz">
+      <div id="progress" class="progress">
+        Pergunta <span id="currentNumber">1</span> de <span id="totalNumber">6</span>
+      </div>
+
+      <div id="question" class="question"></div>
+
+      <form id="options" class="options" aria-label="Alternativas"></form>
+
+      <div class="actions">
+        <button id="confirmBtn" class="btn primary" disabled>Confirmar</button>
+        <button id="nextBtn" class="btn" disabled>Próxima</button>
+      </div>
+
+      <div id="feedback" class="feedback" aria-live="polite"></div>
+    </div>
+
+    <div id="result" class="result hidden">
+      <h2>Resultado</h2>
+      <p>Você acertou <span id="correctCount"></span> de <span id="totalCount"></span> questões.</p>
+      <p>Percentual de acerto: <span id="percent"></span>%.</p>
+      <button id="restartBtn" class="btn">Reiniciar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
