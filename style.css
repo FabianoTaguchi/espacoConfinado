@@ -101,5 +101,31 @@ h1 {
   color: var(--text);
 }
 
+/* destaque para a página de resultado */
+.result {
+  margin-top: 16px;
+  padding: 24px;
+  border: 2px solid #16a34a;
+  background: #dcfce7;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+.result h2 {
+  margin: 0 0 8px;
+  font-size: 26px;
+  color: #064e3b;
+}
+.result p {
+  font-size: 18px;
+  margin: 6px 0;
+}
+.result span {
+  font-weight: 700;
+  padding: 2px 8px;
+  background: #bbf7d0;
+  border: 1px solid #16a34a;
+  border-radius: 6px;
+}
+
 .hidden { display: none !important; }
 .result.hidden { display: none; }
